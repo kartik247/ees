@@ -32,7 +32,7 @@ def institute_list(request):
                     dfm = Departmentfloormap(department_id=dep_id, floor_number=floorNumber, num_of_users=numberOfUsers)
                     dfm.save()
             responseMsg = {"message": "Your institute ID is " + str(institute_id.pkid) + ". Please call the below URL to generate configurations for your institute",
-                       "url": "http://127.0.0.1:8000/api/v1/generateConfig/" + str(institute_id.pkid) + "/"}
+                       "url": "http://<IPaddress>:<Port>/api/v1/generateConfig/" + str(institute_id.pkid) + "/"}
             return JsonResponse(responseMsg, safe=False, status=201)
         except:
             return JsonResponse({"ERROR: incorrect data provided"}, safe=False, status=400)
@@ -64,7 +64,7 @@ def institute_detail(request, pkid):
             for eachfloor in floor_details:
                 floor_number = eachfloor.floor_number
                 num_of_users = eachfloor.num_of_users
-            
+
             #dep_serializer = DepartmentSerializer(eachdep)
             #print(dep_serializer)
         return JsonResponse(response)
