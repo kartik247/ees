@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Education Enablement Services | Collector</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/cui-standard.min.css' %}" type="text/css">
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/buildings.js' %}"></script>
+    </head>
+    <body class="cui">
+        <div class="content-fluid">
+            {% include 'sidemenu.html' %}
+            <main>
+                {% include 'header.html' %}
+                <div class="content" style="height:67%">
+                    <div class="container">
+                        <div class="section">
+                            <h3 class="text-center">Campus Internet Enablement</h3>
+                            <div class="ui-steps ui-steps--success">
+                                <div class="ui-step visited">
+                                    <div class="step__icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="step__label">Departments</div>
+                                </div>
+                                <div class="ui-step active">
+                                    <div class="step__icon">
+                                        2
+                                    </div>
+                                    <div class="step__label">Building Layout</div>
+                                </div>
+                                <div class="ui-step">
+                                    <div class="step__icon">3</div>
+                                    <div class="step__label">User Floor Plan</div>
+                                </div>
+                                <div class="ui-step">
+                                    <div class="step__icon">4</div>
+                                    <div class="step__label">Download Config</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row base-margin-top" style="height:60%">
+                            <div class="responsive-table">
+
+                                    <table class="table table--bordered">
+                                        <thead>
+                                            <th>Building Name</th>
+                                            <th>Number of floors</th>
+                                            <th>Add new</th>
+                                        </thead>
+                                        <tbody id="bglform">
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-group__text">
+                                                        <input type="text" placeholder="Specify name">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group__text">
+                                                        <input type="number" placeholder="Floor count">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a><span class="icon-add-outline" id="addbgl"></span></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                <br>
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="content">
+                    <table class="table--loose" style="margin:auto">
+                        <tr>
+                            <td>
+                                <button class="btn btn--secondary" id="previous">Previous</button>
+                            </td>
+                            <td>
+                                <button class="btn btn--success" id="save">Save</button>
+                            </td>
+                            <td>
+                                <button class="btn btn--primary" id="next">Next</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                {% include 'footer.html' %}
+            </main>
+        </div>
+
+    </body>
+</html>

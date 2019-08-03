@@ -1,0 +1,33 @@
+<header class="header">
+    <div class="header-bar container">
+        <a class="btn btn--small btn--icon toggle-menu">
+            <span class="icon-list-menu"></span>
+        </a>
+        <a class="header-bar__logo">
+            <span class="icon-cisco"></span>
+        </a>
+        <div class="header-bar__main">
+            <div class="header-breadcrumbs">
+                <!--
+                <ul class="breadcrumb">
+                    <li><a>Operate</a></li>
+                    <li><a>Devices</a></li>
+                    <li><span>Discovery</span></li>
+                </ul>
+                -->
+            </div>
+            <div class="header-heading">
+                <h1 class="page-title">Education Enablement Services</h1>
+            </div>
+        </div>
+        <div class="header-toolbar">
+            <a>
+                <span>{{request.user}}</span>
+            </a>
+            &nbsp;&nbsp;
+            <a class="btn btn--small btn--icon" data-balloon="Logout" data-balloon-pos="down" href="/logout/">
+                <span class="icon-sign-out"></span>
+            </a>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,313 @@
+//
+// Pagination
+//
+// Styleguide Components.Pagination
+//
+
+
+//
+// Size
+//
+// Markup:
+// <div class="base-margin-bottom">
+//     <div class="subheader">Small</div>
+//     <ul class="pagination pagination--small">
+//         <li><a href="javascript:;">Previous</a></li>
+//         <li><a href="javascript:;">1</a></li>
+//         <li><a href="javascript:;">2</a></li>
+//         <li class="active"><a href="javascript:;">3</a></li>
+//         <li><a href="javascript:;">4</a></li>
+//         <li><a href="javascript:;">5</a></li>
+//         <li><a href="javascript:;">Next</a></li>
+//     </ul>
+// </div>
+// <div class="base-margin-bottom">
+//     <div class="subheader">Default</div>
+//     <ul class="pagination">
+//         <li><a href="javascript:;">Previous</a></li>
+//         <li><a href="javascript:;">1</a></li>
+//         <li><a href="javascript:;">2</a></li>
+//         <li class="active"><a href="javascript:;">3</a></li>
+//         <li><a href="javascript:;">4</a></li>
+//         <li><a href="javascript:;">5</a></li>
+//         <li><a href="javascript:;">Next</a></li>
+//     </ul>
+// </div>
+// <div class="base-margin-bottom">
+//     <div class="subheader">Large</div>
+//     <ul class="pagination pagination--large">
+//         <li><a href="javascript:;">Previous</a></li>
+//         <li><a href="javascript:;">1</a></li>
+//         <li><a href="javascript:;">2</a></li>
+//         <li class="active"><a href="javascript:;">3</a></li>
+//         <li><a href="javascript:;">4</a></li>
+//         <li><a href="javascript:;">5</a></li>
+//         <li><a href="javascript:;">Next</a></li>
+//     </ul>
+// </div>
+//
+// Weight: 1
+//
+// Styleguide Components.Pagination.Size
+//
+
+
+//
+// Bordered
+//
+// Markup:
+// <ul class="pagination pagination--bordered">
+//     <li><a href="javascript:;">Previous</a></li>
+//     <li><a href="javascript:;">1</a></li>
+//     <li><a href="javascript:;">2</a></li>
+//     <li class="active"><a href="javascript:;">3</a></li>
+//     <li><a href="javascript:;">4</a></li>
+//     <li><a href="javascript:;">5</a></li>
+//     <li><a href="javascript:;">Next</a></li>
+// </ul>
+//
+// Weight: 2
+//
+// Styleguide Components.Pagination.Bordered
+//
+
+
+//
+// With Icons
+//
+// Markup:
+// <div class="row">
+//     <div class="col-xl-6 half-margin-top">
+//         <ul class="pagination">
+//             <li><a href="javascript:;"><span class="icon-chevron-left-double"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-left"></span></a></li>
+//             <li><a href="javascript:;">1</a></li>
+//             <li><a href="javascript:;">2</a></li>
+//             <li class="active"><a href="javascript:;">3</a></li>
+//             <li><a href="javascript:;">4</a></li>
+//             <li><a href="javascript:;">5</a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right-double"></span></a></li>
+//         </ul>
+//     </div>
+//     <div class="col-xl-6 half-margin-top">
+//         <ul class="pagination pagination--bordered">
+//             <li><a href="javascript:;"><span class="icon-chevron-left-double"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-left"></span></a></li>
+//             <li><a href="javascript:;">1</a></li>
+//             <li><a href="javascript:;">2</a></li>
+//             <li class="active"><a href="javascript:;">3</a></li>
+//             <li><a href="javascript:;">4</a></li>
+//             <li><a href="javascript:;">5</a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right-double"></span></a></li>
+//         </ul>
+//     </div>
+// </div>
+//
+// Weight: 3
+//
+// Styleguide Components.Pagination.Icons
+//
+
+
+//
+// Big Data
+//
+// <h6>Use the following rules and examples for handling large datasets:</h6>
+//
+// Markup:
+// <div class="row">
+//     <div class="col-xl-6">
+//         <h6 class="flex-center-vertical">
+//             <span class="label label--circle label--small">
+//                 <span class="icon-check"></span>
+//             </span>
+//             <span class="half-margin-left">When first page selected, disable the 'first' and 'previous' navigation actions</span>
+//         </h6>
+//         <h6 class="flex-center-vertical">
+//             <span class="label label--circle label--small">
+//                 <span class="icon-check"></span>
+//             </span>
+//             <span class="half-margin-left">When last page selected, disable the 'last' and 'next' navigation actions</span>
+//         </h6>
+//         <h6 class="flex-center-vertical">
+//             <span class="label label--circle label--small">
+//                 <span class="icon-check"></span>
+//             </span>
+//             <span class="half-margin-left">Always render the first and last pages</span>
+//         </h6>
+//         <h6 class="flex-center-vertical">
+//             <span class="label label--circle label--small">
+//                 <span class="icon-check"></span>
+//             </span>
+//             <span class="half-margin-left">Always render maximum of 5 clickable pages</span>
+//         </h6>
+//         <h6 class="flex-center-vertical">
+//             <span class="label label--circle label--small">
+//                 <span class="icon-check"></span>
+//             </span>
+//             <span class="half-margin-left">If page count > 5 use an ellipsis</span>
+//         </h6>
+//     </div>
+//     <div class="col-xl-6">
+//         <ul class="pagination pagination--bordered">
+//             <li><a class="disabled" href="javascript:;"><span class="icon-chevron-left-double"></span></a></li>
+//             <li><a class="disabled" href="javascript:;"><span class="icon-chevron-left"></span></a></li>
+//             <li class="active"><a href="javascript:;">1</a></li>
+//             <li><a href="javascript:;">2</a></li>
+//             <li><a href="javascript:;">3</a></li>
+//             <li><a href="javascript:;">4</a></li>
+//             <li><span class="icon-more"></span></li>
+//             <li><a href="javascript:;">71</a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right-double"></span></a></li>
+//         </ul>
+//         <div class="base-padding"></div>
+//         <ul class="pagination pagination--bordered">
+//             <li><a href="javascript:;"><span class="icon-chevron-left-double"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-left"></span></a></li>
+//             <li><a href="javascript:;">1</a></li>
+//             <li><span class="icon-more"></span></li>
+//             <li><a href="javascript:;">5</a></li>
+//             <li class="active"><a href="javascript:;">6</a></li>
+//             <li><a href="javascript:;">7</a></li>
+//             <li><span class="icon-more"></span></li>
+//             <li><a href="javascript:;">71</a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-right-double"></span></a></li>
+//         </ul>
+//         <div class="base-padding"></div>
+//         <ul class="pagination pagination--bordered">
+//             <li><a href="javascript:;"><span class="icon-chevron-left-double"></span></a></li>
+//             <li><a href="javascript:;"><span class="icon-chevron-left"></span></a></li>
+//             <li><a href="javascript:;">1</a></li>
+//             <li><span class="icon-more"></span></li>
+//             <li><a href="javascript:;">68</a></li>
+//             <li><a href="javascript:;">69</a></li>
+//             <li><a href="javascript:;">70</a></li>
+//             <li class="active"><a href="javascript:;">71</a></li>
+//             <li><a class="disabled" href="javascript:;"><span class="icon-chevron-right"></span></a></li>
+//             <li><a class="disabled" href="javascript:;"><span class="icon-chevron-right-double"></span></a></li>
+//         </ul>
+//     </div>
+// </div>
+//
+// Weight: 4
+//
+// Styleguide Components.Pagination.Big
+//
+
+.pagination {
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+
+    > li {
+        > a {
+            display: flex;
+            align-items: center;
+            border: 1px solid transparent;
+            border-radius: $base-border-radius;
+            height: $pagination-height-default;
+            padding: $pagination-padding-default;
+
+            &:hover,
+            &:active,
+            &:focus,
+            &:visited {
+                text-decoration: none;
+            }
+
+            &:hover,
+            &:focus {
+                color: $base-link-color;
+                box-shadow: inset 0 0 0 1px $base-accent-color;
+            }
+
+            &.disabled {
+                color: $base-font-color;
+            }
+        }
+
+        + li {
+            margin-left: $base-spacing-qtr;
+        }
+
+        .icon-more {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 $base-spacing-half;
+        }
+
+        &.active {
+            > a {
+                color: $white;
+                border-color: $base-accent-color;
+                background-color: $base-accent-color;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &--bordered {
+        > li {
+            > a {
+                border: 1px solid $base-border-color;
+
+                &.disabled {
+                    background-color: rgba(0,0,0,0.05);
+                    border-color: transparent;
+                }
+            }
+
+            + li {
+                margin-left: -1px;
+            }
+
+            &:first-child {
+                margin-right: $base-spacing-qtr;
+            }
+            &:last-child {
+                margin-left: $base-spacing-qtr;
+            }
+        }
+    }
+
+    &--small {
+        > li > a {
+            height: $pagination-height-small;
+            padding: $pagination-padding-small;
+        }
+    }
+
+    &--medium {
+        > li > a {
+            height: $pagination-height-default;
+            padding: $pagination-padding-default;
+        }
+    }
+
+    &--large {
+        > li > a {
+            height: $pagination-height-large;
+            padding: $pagination-padding-large;
+        }
+    }
+}
+
+// Global Modifiers
+
+&.cui--animated .pagination {
+    > li > a:hover,
+    > li > a:focus {
+        transition: box-shadow .25s;
+    }
+    > li.active > a {
+        transition: background-color .25s;
+    }
+}
