@@ -2,6 +2,7 @@ Django==2.2.2
 django-extensions==2.1.9
 djangorestframework==3.10.2
 graphviz==0.11.1
+gunicorn==19.9.0
 mysql-connector-python==8.0.16
 protobuf==3.8.0
 pydot==1.4.1
