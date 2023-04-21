@@ -9,4 +9,4 @@ pydot==1.4.1
 pyparsing==2.4.0
 pytz==2019.1
 six==1.12.0
-sqlparse==0.3.0
+sqlparse==0.4.4
